@@ -1,4 +1,4 @@
-# Project Final Paper
+# Player Performance with Machine Learning
 
 This repository contains the final paper, presentation materials, and the Python scripts used in the project.
 
