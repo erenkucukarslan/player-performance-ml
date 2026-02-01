@@ -1,0 +1,29 @@
+# --- Media (keep locally, don't push to GitHub) ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# --- Virtual environments ---
+.venv/
+venv/
+ENV/
+env/
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+*.iml
+
+# --- OS ---
+.DS_Store
+Thumbs.db
