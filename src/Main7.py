@@ -2,9 +2,8 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-# ----------------------------
-# Data Set (single source in repo)
-# ----------------------------
+
+# Data Set
 DATA_PATH = "data/extended_player_data.csv"
 data = pd.read_csv(DATA_PATH)
 
@@ -15,9 +14,7 @@ TARGET = "Transfer Value (mil €)"
 X = data[FEATURES]
 y = data[TARGET]
 
-# ----------------------------
 # Train-test split
-# ----------------------------
 X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
@@ -31,9 +28,7 @@ print(f"Dataset Size: {data.shape}")
 print(f"Training Data Size: {X_train_scaled.shape}")
 print(f"Test Data Size: {X_test_scaled.shape}")
 
-# ----------------------------
 # Random Forest Regression
-# ----------------------------
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
